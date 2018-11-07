@@ -33,7 +33,7 @@ class PageQuestions extends Component {
         [id]: value === answers ? '0' : null
       }
     }, () => {
-      if(this.state.answers[id] !== null) return
+      if(value.length) return
         delete this.state.answers[id]
     })
   };
